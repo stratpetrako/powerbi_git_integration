@@ -1,0 +1,21 @@
+EVALUATE
+VAR EndDate = DATE(2024, 9, 29)  // Adjust the end date here
+
+VAR FilteredDates =
+    TOPN(
+        7,
+        FILTER(
+            VALUES(hcp_appointments[Start Date]),
+            hcp_appointments[Start Date] <= EndDate
+        ),
+        hcp_appointments[Start Date], DESC
+    )
+
+VAR SummarizedTable =
+    ADDCOLUMNS(
+        FilteredDates,
+        "Sum_WdDirect", [#_WdDirect]--CALCULATE([#_WdDirect], hcp_appointments[Start Date])
+    )
+
+RETURN
+SummarizedTable
