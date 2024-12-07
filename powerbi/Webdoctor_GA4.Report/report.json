@@ -1,0 +1,684 @@
+{
+  "config": "{\"version\":\"5.52\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.48\",\"type\":2},\"customTheme\":{\"name\":\"AccessibleOrchid\",\"version\":\"5.48\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "filters": "[]",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "config": "{}",
+      "name": "Pod",
+      "referenceScope": 1
+    },
+    {
+      "boundSection": "ReportSectionec45c8c39426e54191f3",
+      "config": "{}",
+      "name": "Pod1",
+      "referenceScope": 1
+    },
+    {
+      "boundSection": "ReportSection7f392bac7990d9e7d556",
+      "config": "{}",
+      "name": "Pod2",
+      "referenceScope": 1
+    }
+  ],
+  "publicCustomVisuals": [
+    "advancedPieDonut812F760774854B428BA58A87279F6AF6",
+    "chartexposankeydiagramD70B8BC1836C4420A7BFCE36F48EE4BE",
+    "multipleAxesChartBC35C88E1D1A49DFA5A9240AFBB4E3BC",
+    "RadarChart1446119667547",
+    "sankey02300D1BE6F5427989F3DE31CCA9E0F32020",
+    "Sunburst1445472000808"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "AccessibleOrchid",
+            "path": "BuiltInThemes/AccessibleOrchid.json",
+            "type": 201
+          },
+          {
+            "name": "CY23SU08",
+            "path": "BaseThemes/CY23SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "webdoctor_01_colour778482117726057.png",
+            "path": "webdoctor_01_colour778482117726057.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"295L\"}}}}}]},\"type\":0}",
+      "displayName": "GA4 - Items Purchased",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1600.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"08613a5d63714737d05a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46,\"y\":242,\"z\":11000,\"width\":144,\"height\":67,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemRevenue)\",\"NativeReferenceName\":\"Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemRevenue\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(www webdoctor ie - GA4.itemRevenue)\":{\"displayName\":\"Revenue\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.00,
+          "width": 144.00,
+          "x": 46.00,
+          "y": 242.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"237ae922e91e9ee27ecd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1103,\"y\":13,\"z\":7000,\"width\":139,\"height\":61,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4.Week of Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Week of Year\"},\"Name\":\"www webdoctor ie - GA4.Week of Year\",\"NativeReferenceName\":\"Week of Year\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"pendingChangesIcon\":[{\"properties\":{\"size\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 61.00,
+          "width": 139.00,
+          "x": 1103.00,
+          "y": 13.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"29a10c478e2975992c1b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":41,\"y\":18,\"z\":15000,\"width\":161,\"height\":65,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"webdoctor_01_colour778482117726057.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 65.00,
+          "width": 161.00,
+          "x": 41.00,
+          "y": 18.00,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"2ff9f46259336d026a85\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46,\"y\":514,\"z\":17000,\"width\":144,\"height\":73,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4.Conv Rate (Viewed/Purchased)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Conv Rate (Viewed/Purchased)\"},\"Name\":\"www webdoctor ie - GA4.Conv Rate (Viewed/Purchased)\",\"NativeReferenceName\":\"Conv Rate (Viewed/Purchased)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Conv Rate (Viewed/Purchased)\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 73.00,
+          "width": 144.00,
+          "x": 46.00,
+          "y": 514.00,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"498c307bad04490dc0cc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":281,\"y\":13,\"z\":3000,\"width\":149,\"height\":62,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4.itemCategory\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemCategory\"},\"Name\":\"www webdoctor ie - GA4.itemCategory\",\"NativeReferenceName\":\"Item Category\"}]},\"columnProperties\":{\"www webdoctor ie - GA4.itemCategory\":{\"displayName\":\"Item Category\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 62.00,
+          "width": 149.00,
+          "x": 281.00,
+          "y": 13.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"546598d9b1c9580c3a0d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46,\"y\":418,\"z\":16000,\"width\":144,\"height\":73,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4.AOV\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"AOV\"},\"Name\":\"www webdoctor ie - GA4.AOV\",\"NativeReferenceName\":\"Average Order Value\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"AOV\"}}}]},\"columnProperties\":{\"www webdoctor ie - GA4.AOV\":{\"displayName\":\"Average Order Value\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 73.00,
+          "width": 144.00,
+          "x": 46.00,
+          "y": 418.00,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"8327f2c49b4be22204d3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34,\"y\":104,\"z\":1000,\"width\":168,\"height\":639,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"70D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 639.00,
+          "width": 168.00,
+          "x": 34.00,
+          "y": 104.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"8b73a05ca6dc94359990\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34,\"y\":48,\"z\":0,\"width\":1245,\"height\":91,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 91.00,
+          "width": 1245.00,
+          "x": 34.00,
+          "y": 48.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a569672a86d1726a1e80\",\"layouts\":[{\"id\":0,\"position\":{\"x\":232,\"y\":125,\"z\":8000,\"width\":619,\"height\":309,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"www webdoctor ie - GA4.itemCategory2\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemRevenue)\",\"NativeReferenceName\":\"Sum of itemRevenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemCategory2\"},\"Name\":\"www webdoctor ie - GA4.itemCategory2\",\"NativeReferenceName\":\"itemCategory2\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#DF922D'\"}}}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"www webdoctor ie - GA4\"}},\"Property\":\"itemRevenue\"}},\"Function\":0}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'minColor'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'maxColor'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue by Item Name'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 309.00,
+          "width": 619.00,
+          "x": 232.00,
+          "y": 125.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"b76850668a2ab57ed0de\",\"layouts\":[{\"id\":0,\"position\":{\"x\":430,\"y\":13,\"z\":4000,\"width\":149,\"height\":54,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4.itemCategory2\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemCategory2\"},\"Name\":\"www webdoctor ie - GA4.itemCategory2\",\"NativeReferenceName\":\"Medicine Name\"}]},\"columnProperties\":{\"www webdoctor ie - GA4.itemCategory2\":{\"displayName\":\"Medicine Name\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 54.00,
+          "width": 149.00,
+          "x": 430.00,
+          "y": 13.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"bb2035d41b35708d904c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":824,\"y\":13,\"z\":6000,\"width\":269,\"height\":70,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4.date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"},\"Name\":\"www webdoctor ie - GA4.date\",\"NativeReferenceName\":\"date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-01-01T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-03-31T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-01-01T00:00:00'\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-04-01T00:00:00'\"}}}}}}}]}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select Date'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"pendingChangesIcon\":[{\"properties\":{\"size\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"date\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"slider\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.00,
+          "width": 269.00,
+          "x": 824.00,
+          "y": 13.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"cece2c1f3ad4be7b3290\",\"layouts\":[{\"id\":0,\"position\":{\"x\":879,\"y\":125,\"z\":5000,\"width\":341,\"height\":309,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemsViewed)\"}],\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4.itemCategory2\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemsPurchased\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\",\"NativeReferenceName\":\"Sum of itemsPurchased\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemsViewed\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemsViewed)\",\"NativeReferenceName\":\"Sum of itemsViewed\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemCategory2\"},\"Name\":\"www webdoctor ie - GA4.itemCategory2\",\"NativeReferenceName\":\"itemCategory2\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Item Viewed vs Purchased'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 309.00,
+          "width": 341.00,
+          "x": 879.00,
+          "y": 125.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"cee4c43810765609d886\",\"layouts\":[{\"id\":0,\"position\":{\"x\":40,\"y\":113,\"z\":19000,\"width\":156,\"height\":61,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'GA4 eCommerce'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 61.00,
+          "width": 156.00,
+          "x": 40.00,
+          "y": 113.00,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"d2eca023078c25954b5a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":620,\"y\":13,\"z\":18000,\"width\":187,\"height\":70,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Date Interval.Parameter\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date Interval\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Parameter\"},\"Name\":\"Date Interval.Parameter\",\"NativeReferenceName\":\"Parameter\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select Date Interval'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date Interval\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Parameter Fields\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'''www webdoctor ie - GA4''[Month]'\"}}]]}}}]}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select Date Interval'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Date Interval\"}},\"Property\":\"Parameter Fields\"}},\"Right\":{\"Literal\":{\"Value\":\"'''www webdoctor ie - GA4''[Month]'\"}}}}},\"displayName\":\"Month\"}]}}",
+          "filters": "[]",
+          "height": 70.00,
+          "width": 187.00,
+          "x": 620.00,
+          "y": 13.00,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"e23fc51d5b37dae5a0bc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46,\"y\":329,\"z\":12000,\"width\":144,\"height\":65,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemsPurchased\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\",\"NativeReferenceName\":\"Transactions\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemsPurchased\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(www webdoctor ie - GA4.itemsPurchased)\":{\"displayName\":\"Transactions\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 65.00,
+          "width": 144.00,
+          "x": 46.00,
+          "y": 329.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"ea31c89b91256ff5109c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":61,\"y\":800,\"z\":9000,\"width\":570,\"height\":281,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4.Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\"}],\"Series\":[{\"queryRef\":\"www webdoctor ie - GA4.itemCategory2\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemsPurchased\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\",\"NativeReferenceName\":\"Sum of itemsPurchased\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemCategory2\"},\"Name\":\"www webdoctor ie - GA4.itemCategory2\",\"NativeReferenceName\":\"itemCategory2\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Month\"},\"Name\":\"www webdoctor ie - GA4.Month\",\"NativeReferenceName\":\"Month1\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Month\"}}}]},\"queryFieldParametersByRole\":{\"Category\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Date Interval\"}},\"Property\":\"Parameter\"}}}]},\"columnProperties\":{\"www webdoctor ie - GA4.Month\":{\"displayName\":\"Month\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"error\":[{\"properties\":{\"enabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#DF922D'\"}}}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Transactions by Item Name'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter0bee9720625a2cbad255\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"www webdoctor ie - GA4\"}},\"Property\":\"itemCategory3\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemCategory3\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'(not set)'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 281.00,
+          "width": 570.00,
+          "x": 61.00,
+          "y": 800.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"f291b2c2823790809463\",\"layouts\":[{\"id\":0,\"position\":{\"x\":41,\"y\":174,\"z\":20000,\"width\":155,\"height\":29,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 29.00,
+          "width": 155.00,
+          "x": 41.00,
+          "y": 174.00,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"f5004bac40d515298021\",\"layouts\":[{\"id\":0,\"position\":{\"x\":667,\"y\":795,\"z\":13000,\"width\":545,\"height\":281,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4.Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemsViewed)\"}],\"Y2\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemsPurchased\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\",\"NativeReferenceName\":\"Sum of itemsPurchased\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemRevenue)\",\"NativeReferenceName\":\"Sum of itemRevenue\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemsViewed\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemsViewed)\",\"NativeReferenceName\":\"Sum of itemsViewed\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Month\"},\"Name\":\"www webdoctor ie - GA4.Month\",\"NativeReferenceName\":\"Month1\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Month\"}}}]},\"queryFieldParametersByRole\":{\"Category\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Date Interval\"}},\"Property\":\"Parameter\"}}}]},\"columnProperties\":{\"www webdoctor ie - GA4.Month\":{\"displayName\":\"Month\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"error\":[{\"properties\":{\"enabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#3BDAC8'\"}}}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#AAEBBE'\"}}}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4.itemsViewed)\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0C9E4E'\"}}}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sum of Revenue - Transactions - Items Viewed'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter0bee9720625a2cbad255\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"www webdoctor ie - GA4\"}},\"Property\":\"itemCategory3\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemCategory3\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'(not set)'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 281.00,
+          "width": 545.00,
+          "x": 667.00,
+          "y": 795.00,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"f5294b279d98aec97ea8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":61,\"y\":1097,\"z\":10000,\"width\":1159,\"height\":145,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"www webdoctor ie - GA4.Hour of day\",\"active\":true}],\"Size\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Hour of day\"},\"Name\":\"www webdoctor ie - GA4.Hour of day\",\"NativeReferenceName\":\"Hour of day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemsPurchased\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\",\"NativeReferenceName\":\"Sum of itemsPurchased\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"25L\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"bubbles\":[{\"properties\":{\"bubbleSize\":{\"expr\":{\"Literal\":{\"Value\":\"34L\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.6}}}}},\"showAllDataPoints\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"colorByCategory\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Hour of Day Transactions'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 145.00,
+          "width": 1159.00,
+          "x": 61.00,
+          "y": 1097.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"f72e348a40344eb5103a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":41,\"y\":1279,\"z\":14000,\"width\":1159,\"height\":295,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"www webdoctor ie - GA4.itemCategory\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4.itemCategory2\"}],\"Values\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemsViewed)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"},{\"queryRef\":\"www webdoctor ie - GA4.AOV\"},{\"queryRef\":\"www webdoctor ie - GA4.Conv Rate (Viewed/Purchased)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemCategory\"},\"Name\":\"www webdoctor ie - GA4.itemCategory\",\"NativeReferenceName\":\"itemCategory\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemCategory2\"},\"Name\":\"www webdoctor ie - GA4.itemCategory2\",\"NativeReferenceName\":\"itemCategory2\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemsPurchased\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\",\"NativeReferenceName\":\"Sum of itemsPurchased\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemsViewed\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemsViewed)\",\"NativeReferenceName\":\"Sum of itemsViewed\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemRevenue)\",\"NativeReferenceName\":\"Sum of itemRevenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"AOV\"},\"Name\":\"www webdoctor ie - GA4.AOV\",\"NativeReferenceName\":\"AOV\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Conv Rate (Viewed/Purchased)\"},\"Name\":\"www webdoctor ie - GA4.Conv Rate (Viewed/Purchased)\",\"NativeReferenceName\":\"Conv Rate (Viewed/Purchased)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemRevenue\"}},\"Function\":0}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"www webdoctor ie - GA4.itemCategory\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"www webdoctor ie - GA4\"}},\"Property\":\"itemCategory\"}}],\"isPinned\":true},{\"queryRefs\":[\"www webdoctor ie - GA4.itemCategory2\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"137D\"}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"74D\"}}}},\"selector\":{\"metadata\":\"www webdoctor ie - GA4.AOV\"}}]}}}",
+          "filters": "[]",
+          "height": 295.00,
+          "width": 1159.00,
+          "x": 41.00,
+          "y": 1279.00,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"fd7b3a3d269032d0028b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":236,\"y\":460,\"z\":2000,\"width\":976,\"height\":298,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4.Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\"}],\"Series\":[{\"queryRef\":\"www webdoctor ie - GA4.itemCategory\"}],\"Y2\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}],\"Tooltips\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemsPurchased\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemsPurchased)\",\"NativeReferenceName\":\"Sum of itemsPurchased\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemCategory\"},\"Name\":\"www webdoctor ie - GA4.itemCategory\",\"NativeReferenceName\":\"itemCategory\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4.itemRevenue)\",\"NativeReferenceName\":\"Sum of itemRevenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Month\"},\"Name\":\"www webdoctor ie - GA4.Month\",\"NativeReferenceName\":\"Month1\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Month\"}}}]},\"queryFieldParametersByRole\":{\"Category\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Date Interval\"}},\"Property\":\"Parameter\"}}}]},\"columnProperties\":{\"www webdoctor ie - GA4.Month\":{\"displayName\":\"Month\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"error\":[{\"properties\":{\"enabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#DF922D'\"}}}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4.itemRevenue)\"}}],\"lineStyles\":[{\"properties\":{\"strokeLineJoin\":{\"expr\":{\"Literal\":{\"Value\":\"'round'\"}}},\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'linear'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"preferredCategoryWidth\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue by Category'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter0bee9720625a2cbad255\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"www webdoctor ie - GA4\"}},\"Property\":\"itemCategory3\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"itemCategory3\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'(not set)'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 298.00,
+          "width": 976.00,
+          "x": 236.00,
+          "y": 460.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page Views",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 2400.00,
+      "name": "ReportSection2d6aa8b8098640a76264",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2fa1bfa7b9d1732e8f06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":779.2307692307692,\"y\":5.384615384615384,\"z\":0,\"width\":242.3076923076923,\"height\":66.15384615384615,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 Content Group.date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Content Group\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"},\"Name\":\"www webdoctor ie - GA4 Content Group.date\",\"NativeReferenceName\":\"date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2023-06-01T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"slider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select Date'\"}}}}}],\"pendingChangesIcon\":[{\"properties\":{\"size\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Content Group\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2023-06-01T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 66.15,
+          "width": 242.31,
+          "x": 779.23,
+          "y": 5.38,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"40a033f1419dd2686a9b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":108.57142857142858,\"y\":211.42857142857144,\"z\":1000,\"width\":1085.7142857142858,\"height\":1114.2857142857144,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"www webdoctor ie - GA4 Content Group.pagePath\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 Content Group.totalUsers)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 Content Group.sessions)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 Content Group.engagedSessions)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 Content Group.screenPageViews)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Content Group\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"pagePath\"},\"Name\":\"www webdoctor ie - GA4 Content Group.pagePath\",\"NativeReferenceName\":\"pagePath\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"totalUsers\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Content Group.totalUsers)\",\"NativeReferenceName\":\"Sum of totalUsers\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Content Group.sessions)\",\"NativeReferenceName\":\"Sum of sessions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"engagedSessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Content Group.engagedSessions)\",\"NativeReferenceName\":\"Sum of engagedSessions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"screenPageViews\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Content Group.screenPageViews)\",\"NativeReferenceName\":\"Sum of screenPageViews\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"totalUsers\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 1114.29,
+          "width": 1085.71,
+          "x": 108.57,
+          "y": 211.43,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"d7ff2179aaaf77d322f3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":97.14285714285715,\"y\":1184.2857142857144,\"z\":2000,\"width\":1085.7142857142858,\"height\":260,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 Content Group.sessions)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 Content Group.engagedSessions)\"}],\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 Content Group.date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 Content Group.date.Variation.Date Hierarchy.Quarter\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 Content Group.date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 Content Group.date.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Content Group\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Content Group.sessions)\",\"NativeReferenceName\":\"Sum of sessions\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"www webdoctor ie - GA4 Content Group.date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"www webdoctor ie - GA4 Content Group.date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"www webdoctor ie - GA4 Content Group.date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"www webdoctor ie - GA4 Content Group.date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"date Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"engagedSessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Content Group.engagedSessions)\",\"NativeReferenceName\":\"Sum of engagedSessions\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 260.00,
+          "width": 1085.71,
+          "x": 97.14,
+          "y": 1184.29,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Landing Page",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 2400.00,
+      "name": "ReportSection7f392bac7990d9e7d556",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"106336b7e45f06c97669\",\"layouts\":[{\"id\":0,\"position\":{\"x\":94.91662004475705,\"y\":1551.1406649616367,\"z\":5000,\"width\":1143,\"height\":342,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Quarter\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Day\"}],\"Y2\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.ecommercePurchases)\"}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.purchaseRevenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Landing Page\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"date Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"ecommercePurchases\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.ecommercePurchases)\",\"NativeReferenceName\":\"Sum of ecommercePurchases\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.purchaseRevenue)\",\"NativeReferenceName\":\"Sum of purchaseRevenue\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 342.00,
+          "width": 1143.00,
+          "x": 94.92,
+          "y": 1551.14,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"496645e952185b9fd9d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":107.91662004475705,\"y\":1971.1406649616367,\"z\":6000,\"width\":514,\"height\":335,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.sessionDefaultChannelGroup\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.sessions)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.engagedSessions)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Landing Page\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionDefaultChannelGroup\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.sessionDefaultChannelGroup\",\"NativeReferenceName\":\"sessionDefaultChannelGroup\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.sessions)\",\"NativeReferenceName\":\"Sum of sessions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"engagedSessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.engagedSessions)\",\"NativeReferenceName\":\"Sum of engagedSessions\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessions\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 335.00,
+          "width": 514.00,
+          "x": 107.92,
+          "y": 1971.14,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"4ca85ded667fe2f993bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":545,\"y\":19,\"z\":3000,\"width\":221,\"height\":61,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.landingPage\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Landing Page\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"landingPage\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.landingPage\",\"NativeReferenceName\":\"landingPage\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 61.00,
+          "width": 221.00,
+          "x": 545.00,
+          "y": 19.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"68e1b4293dab5e18082b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":706.9166200447563,\"y\":1971.1406649616367,\"z\":7000,\"width\":514,\"height\":335,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.sessionDefaultChannelGroup\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.purchaseRevenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Landing Page\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionDefaultChannelGroup\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.sessionDefaultChannelGroup\",\"NativeReferenceName\":\"sessionDefaultChannelGroup\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.purchaseRevenue)\",\"NativeReferenceName\":\"Sum of purchaseRevenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 335.00,
+          "width": 514.00,
+          "x": 706.92,
+          "y": 1971.14,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"783a4e505c710c2cb5b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":87.91662004475705,\"y\":1172.1406649616365,\"z\":2000,\"width\":1143,\"height\":342,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Quarter\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Day\"}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.totalUsers)\"}],\"Y2\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.engagedSessions)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.sessions)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Landing Page\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"date Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"engagedSessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.engagedSessions)\",\"NativeReferenceName\":\"Sum of engagedSessions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.sessions)\",\"NativeReferenceName\":\"Sum of sessions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"totalUsers\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.totalUsers)\",\"NativeReferenceName\":\"Sum of totalUsers\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 342.00,
+          "width": 1143.00,
+          "x": 87.92,
+          "y": 1172.14,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"8baba72999540f8dc753\",\"layouts\":[{\"id\":0,\"position\":{\"x\":301,\"y\":19,\"z\":4000,\"width\":221,\"height\":61,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.sessionDefaultChannelGroup\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Landing Page\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionDefaultChannelGroup\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.sessionDefaultChannelGroup\",\"NativeReferenceName\":\"sessionDefaultChannelGroup\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 61.00,
+          "width": 221.00,
+          "x": 301.00,
+          "y": 19.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"cc468f923c544fc29008\",\"layouts\":[{\"id\":0,\"position\":{\"x\":779.2307692307692,\"y\":5.384615384615384,\"z\":1000,\"width\":242.3076923076923,\"height\":66.15384615384615,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Landing Page\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.date\",\"NativeReferenceName\":\"date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2023-07-01T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"slider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select Date'\"}}}}}],\"pendingChangesIcon\":[{\"properties\":{\"size\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Landing Page\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2023-07-01T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 66.15,
+          "width": 242.31,
+          "x": 779.23,
+          "y": 5.38,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"cf1a2892a8b1e84ba3f6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":66.10169491525424,\"y\":155.9322033898305,\"z\":0,\"width\":1172.033898305085,\"height\":849.1525423728814,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"www webdoctor ie - GA4 Landing Page.landingPage\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.totalUsers)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.screenPageViews)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.sessions)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.engagedSessions)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.ecommercePurchases)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 Landing Page.purchaseRevenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 Landing Page\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"landingPage\"},\"Name\":\"www webdoctor ie - GA4 Landing Page.landingPage\",\"NativeReferenceName\":\"landingPage\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"totalUsers\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.totalUsers)\",\"NativeReferenceName\":\"Sum of totalUsers\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"screenPageViews\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.screenPageViews)\",\"NativeReferenceName\":\"Sum of screenPageViews\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.sessions)\",\"NativeReferenceName\":\"Sum of sessions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"engagedSessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.engagedSessions)\",\"NativeReferenceName\":\"Sum of engagedSessions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"ecommercePurchases\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.ecommercePurchases)\",\"NativeReferenceName\":\"Sum of ecommercePurchases\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 Landing Page.purchaseRevenue)\",\"NativeReferenceName\":\"Sum of purchaseRevenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"107D\"}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4 Landing Page.ecommercePurchases)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"88D\"}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4 Landing Page.engagedSessions)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"106D\"}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4 Landing Page.screenPageViews)\"}}]}}}",
+          "filters": "[]",
+          "height": 849.15,
+          "width": 1172.03,
+          "x": 66.10,
+          "y": 155.93,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "GA4 - Channel Groups (Purchase - Last Click))",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 3600.00,
+      "name": "ReportSectionec45c8c39426e54191f3",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"088dcf6f5c48880cceca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":1119,\"z\":20000,\"width\":52,\"height\":294,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"textAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Channel Group'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 294.00,
+          "width": 52.00,
+          "x": 20.00,
+          "y": 1119.00,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"14fa4301140db81ad14a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1001,\"y\":108,\"z\":6000,\"width\":258,\"height\":287,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).deviceCategory\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\"}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"deviceCategory\"},\"Name\":\"www webdoctor ie - GA4 (2).deviceCategory\",\"NativeReferenceName\":\"deviceCategory\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\",\"NativeReferenceName\":\"Sum of purchaseRevenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionDefaultChannelGroup\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\",\"NativeReferenceName\":\"sessionDefaultChannelGroup\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'LeftCenter'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'defaultChannelGroup'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'preferOutside'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"percentageLabelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, percent of total'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue by Device Type'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 287.00,
+          "width": 258.00,
+          "x": 1001.00,
+          "y": 108.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"1914b6c980264fc69d31\",\"layouts\":[{\"id\":0,\"position\":{\"x\":880,\"y\":17,\"z\":4000,\"width\":242,\"height\":66,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"},\"Name\":\"www webdoctor ie - GA4 (2).date\",\"NativeReferenceName\":\"date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-01-01T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-03-31T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"slider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select Date'\"}}}}}],\"pendingChangesIcon\":[{\"properties\":{\"size\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-01-01T00:00:00'\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-04-01T00:00:00'\"}}}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 66.00,
+          "width": 242.00,
+          "x": 880.00,
+          "y": 17.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"1994dd3f6bc0016c5762\",\"layouts\":[{\"id\":0,\"position\":{\"x\":45,\"y\":340,\"z\":13000,\"width\":144,\"height\":67,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"ecommercePurchases\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\",\"NativeReferenceName\":\"Transactions\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"ecommercePurchases\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\":{\"displayName\":\"Transactions\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.00,
+          "width": 144.00,
+          "x": 45.00,
+          "y": 340.00,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"1bc9985e39a76e10773b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":111,\"y\":1452,\"z\":18000,\"width\":1112,\"height\":334,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionMedium\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionSource\"}],\"Values\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).sessions)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).engagedSessions)\"},{\"queryRef\":\"www webdoctor ie - GA4 (2).Conv Rate (Engaged Sessions)\"},{\"queryRef\":\"www webdoctor ie - GA4 (2).Engaged Session Rate\"},{\"queryRef\":\"www webdoctor ie - GA4 (2).AOV2\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"ecommercePurchases\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\",\"NativeReferenceName\":\"Transactions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\",\"NativeReferenceName\":\"Revenue\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).sessions)\",\"NativeReferenceName\":\"Sessions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"engagedSessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).engagedSessions)\",\"NativeReferenceName\":\"Engaged Sessions\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Conv Rate (Engaged Sessions)\"},\"Name\":\"www webdoctor ie - GA4 (2).Conv Rate (Engaged Sessions)\",\"NativeReferenceName\":\"Conv Rate (Engaged Sessions)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionMedium\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionMedium\",\"NativeReferenceName\":\"sessionMedium\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionSource\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionSource\",\"NativeReferenceName\":\"sessionSource\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"AOV2\"},\"Name\":\"www webdoctor ie - GA4 (2).AOV2\",\"NativeReferenceName\":\"AOV2\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Engaged Session Rate\"},\"Name\":\"www webdoctor ie - GA4 (2).Engaged Session Rate\",\"NativeReferenceName\":\"Engaged Session Rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"www webdoctor ie - GA4 (2).sessionMedium\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"www webdoctor ie - GA4 (2)\"}},\"Property\":\"sessionMedium\"}}],\"isPinned\":true},{\"queryRefs\":[\"www webdoctor ie - GA4 (2).sessionSource\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\":{\"displayName\":\"Transactions\"},\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\":{\"displayName\":\"Revenue\"},\"Sum(www webdoctor ie - GA4 (2).sessions)\":{\"displayName\":\"Sessions\"},\"Sum(www webdoctor ie - GA4 (2).engagedSessions)\":{\"displayName\":\"Engaged Sessions\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"gridVertical\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{\"valuesOnRow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"366D\"}}}},\"selector\":{\"metadata\":\"www webdoctor ie - GA4 (2).sessionMedium\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Default'\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 334.00,
+          "width": 1112.00,
+          "x": 111.00,
+          "y": 1452.00,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"25ec573cc0c6304054a3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":757,\"y\":779,\"z\":17000,\"width\":487,\"height\":294,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).Conv Rate (Engaged Sessions)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w1\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"Conv Rate (Engaged Sessions)\"},\"Name\":\"www webdoctor ie - GA4 (2).Conv Rate (Engaged Sessions)\",\"NativeReferenceName\":\"Conv Rate (Engaged Sessions)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"Month\"},\"Name\":\"www webdoctor ie - GA4 (2).Month\",\"NativeReferenceName\":\"Month1\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"Month\"}}}]},\"queryFieldParametersByRole\":{\"Category\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Parameter3\"}},\"Property\":\"Parameter3\"}}}]},\"columnProperties\":{\"www webdoctor ie - GA4 (2).Month\":{\"displayName\":\"Month\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Conv Rate (Engaged Sessions)'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 294.00,
+          "width": 487.00,
+          "x": 757.00,
+          "y": 779.00,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"3066f94cadd5a26fd495\",\"layouts\":[{\"id\":0,\"position\":{\"x\":657,\"y\":125,\"z\":29000,\"width\":349,\"height\":249,\"tabOrder\":29000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).sessions)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionDefaultChannelGroup\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\",\"NativeReferenceName\":\"sessionDefaultChannelGroup\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).sessions)\",\"NativeReferenceName\":\"Sum of sessions\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessions\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'LeftCenter'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'defaultChannelGroup'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'preferOutside'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"percentageLabelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, percent of total'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sessions by Channel'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 249.00,
+          "width": 349.00,
+          "x": 657.00,
+          "y": 125.00,
+          "z": 29000.00
+        },
+        {
+          "config": "{\"name\":\"31e37b70ac5c90444a7a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34,\"y\":104,\"z\":11000,\"width\":168,\"height\":639,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"70D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 639.00,
+          "width": 168.00,
+          "x": 34.00,
+          "y": 104.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"344d3479201717a78e40\",\"layouts\":[{\"id\":0,\"position\":{\"x\":41,\"y\":198,\"z\":28000,\"width\":153,\"height\":29,\"tabOrder\":28000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Corporate Care \",\"textStyle\":{\"fontStyle\":\"italic\",\"fontSize\":\"9pt\",\"color\":\"#0d9a9f\"}},{\"value\":\"included\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontStyle\":\"italic\",\"fontSize\":\"9pt\",\"color\":\"#0d9a9f\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 29.00,
+          "width": 153.00,
+          "x": 41.00,
+          "y": 198.00,
+          "z": 28000.00
+        },
+        {
+          "config": "{\"name\":\"3fcfcf4341cc8a4c8426\",\"layouts\":[{\"id\":0,\"position\":{\"x\":219,\"y\":771,\"z\":14000,\"width\":515,\"height\":294,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\"}],\"Y2\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).engagedSessions)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w1\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\",\"NativeReferenceName\":\"Sum of purchaseRevenue\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"engagedSessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).engagedSessions)\",\"NativeReferenceName\":\"Sum of engagedSessions\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"Month\"},\"Name\":\"www webdoctor ie - GA4 (2).Month\",\"NativeReferenceName\":\"Month1\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"Month\"}}}]},\"queryFieldParametersByRole\":{\"Category\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Parameter3\"}},\"Property\":\"Parameter3\"}}}]},\"columnProperties\":{\"www webdoctor ie - GA4 (2).Month\":{\"displayName\":\"Month\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sessions - Engaged Sessions'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 294.00,
+          "width": 515.00,
+          "x": 219.00,
+          "y": 771.00,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"4fffd2a428333830774c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":111,\"y\":1805,\"z\":7000,\"width\":1112,\"height\":561,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionCampaignName\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionSource\"},{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionMedium\"}],\"Values\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).sessions)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).engagedSessions)\"},{\"queryRef\":\"www webdoctor ie - GA4 (2).Conv Rate (Engaged Sessions)\"},{\"queryRef\":\"www webdoctor ie - GA4 (2).Engaged Session Rate\"},{\"queryRef\":\"www webdoctor ie - GA4 (2).AOV2\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w1\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"sessionCampaignName\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionCampaignName\",\"NativeReferenceName\":\"sessionCampaignName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"ecommercePurchases\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\",\"NativeReferenceName\":\"Transactions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\",\"NativeReferenceName\":\"Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"sessionSource\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionSource\",\"NativeReferenceName\":\"sessionSource\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"sessionMedium\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionMedium\",\"NativeReferenceName\":\"sessionMedium\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).sessions)\",\"NativeReferenceName\":\"Sessions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"engagedSessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).engagedSessions)\",\"NativeReferenceName\":\"Engaged Sessions\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"AOV2\"},\"Name\":\"www webdoctor ie - GA4 (2).AOV2\",\"NativeReferenceName\":\"AOV2\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"Conv Rate (Engaged Sessions)\"},\"Name\":\"www webdoctor ie - GA4 (2).Conv Rate (Engaged Sessions)\",\"NativeReferenceName\":\"Conv Rate (Engaged Sessions)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"Engaged Session Rate\"},\"Name\":\"www webdoctor ie - GA4 (2).Engaged Session Rate\",\"NativeReferenceName\":\"Engaged Session Rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"ecommercePurchases\"}},\"Function\":0}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"www webdoctor ie - GA4 (2).sessionCampaignName\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"www webdoctor ie - GA4 (2)\"}},\"Property\":\"sessionCampaignName\"}}],\"isPinned\":true},{\"queryRefs\":[\"www webdoctor ie - GA4 (2).sessionSource\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"www webdoctor ie - GA4 (2)\"}},\"Property\":\"sessionSource\"}}],\"isPinned\":true},{\"queryRefs\":[\"www webdoctor ie - GA4 (2).sessionMedium\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\":{\"displayName\":\"Transactions\"},\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\":{\"displayName\":\"Revenue\"},\"Sum(www webdoctor ie - GA4 (2).sessions)\":{\"displayName\":\"Sessions\"},\"Sum(www webdoctor ie - GA4 (2).engagedSessions)\":{\"displayName\":\"Engaged Sessions\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"gridVertical\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{\"valuesOnRow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"372D\"}}}},\"selector\":{\"metadata\":\"www webdoctor ie - GA4 (2).sessionCampaignName\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Default'\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 561.00,
+          "width": 1112.00,
+          "x": 111.00,
+          "y": 1805.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"5504bcf9900c24d9d900\",\"layouts\":[{\"id\":0,\"position\":{\"x\":49,\"y\":515,\"z\":16000,\"width\":144,\"height\":67,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).Conv Rate (Engaged Sessions)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Conv Rate (Engaged Sessions)\"},\"Name\":\"www webdoctor ie - GA4 (2).Conv Rate (Engaged Sessions)\",\"NativeReferenceName\":\"Conv Rate (Engaged Sessions)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Conv Rate (Engaged Sessions)\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.00,
+          "width": 144.00,
+          "x": 49.00,
+          "y": 515.00,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"5b25ec1f5601ae5ad043\",\"layouts\":[{\"id\":0,\"position\":{\"x\":41,\"y\":113,\"z\":27000,\"width\":154,\"height\":85,\"tabOrder\":27000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'GA4 Revenue & Traffic by Channel'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 85.00,
+          "width": 154.00,
+          "x": 41.00,
+          "y": 113.00,
+          "z": 27000.00
+        },
+        {
+          "config": "{\"name\":\"65532c135241a3e63174\",\"layouts\":[{\"id\":0,\"position\":{\"x\":228,\"y\":15,\"z\":24000,\"width\":149,\"height\":54,\"tabOrder\":24000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionDefaultChannelGroup\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\",\"NativeReferenceName\":\"Channel Group\"}]},\"columnProperties\":{\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\":{\"displayName\":\"Channel Group\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 54.00,
+          "width": 149.00,
+          "x": 228.00,
+          "y": 15.00,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"6aac099a480962005304\",\"layouts\":[{\"id\":0,\"position\":{\"x\":41,\"y\":18,\"z\":9000,\"width\":161,\"height\":65,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"webdoctor_01_colour778482117726057.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 65.00,
+          "width": 161.00,
+          "x": 41.00,
+          "y": 18.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"73951d9a1c0180ade160\",\"layouts\":[{\"id\":0,\"position\":{\"x\":45,\"y\":249,\"z\":12000,\"width\":144,\"height\":67,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\",\"NativeReferenceName\":\"Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\":{\"displayName\":\"Revenue\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.00,
+          "width": 144.00,
+          "x": 45.00,
+          "y": 249.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"7638c47995167dea5435\",\"layouts\":[{\"id\":0,\"position\":{\"x\":753,\"y\":424,\"z\":2000,\"width\":496,\"height\":318,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\"}],\"Series\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w1\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\",\"NativeReferenceName\":\"Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"sessionDefaultChannelGroup\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\",\"NativeReferenceName\":\"sessionDefaultChannelGroup\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"Month\"},\"Name\":\"www webdoctor ie - GA4 (2).Month\",\"NativeReferenceName\":\"Month1\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"Month\"}}}]},\"queryFieldParametersByRole\":{\"Category\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Parameter3\"}},\"Property\":\"Parameter3\"}}}]},\"columnProperties\":{\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\":{\"displayName\":\"Revenue\"},\"www webdoctor ie - GA4 (2).Month\":{\"displayName\":\"Month\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue by Channel'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 318.00,
+          "width": 496.00,
+          "x": 753.00,
+          "y": 424.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"8541b846b3f1e41f6fa8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":237,\"y\":104,\"z\":1000,\"width\":420,\"height\":296,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionDefaultChannelGroup\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\",\"NativeReferenceName\":\"sessionDefaultChannelGroup\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\",\"NativeReferenceName\":\"Sum of purchaseRevenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'LeftCenter'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'defaultChannelGroup'\"}}}}}],\"labels\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'preferOutside'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"percentageLabelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, percent of total'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue by Channel'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 296.00,
+          "width": 420.00,
+          "x": 237.00,
+          "y": 104.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"8a988fd51d09c9e25dd3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1133,\"y\":11,\"z\":23000,\"width\":139,\"height\":61,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).Week of Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Week of Year\"},\"Name\":\"www webdoctor ie - GA4 (2).Week of Year\",\"NativeReferenceName\":\"Week of Year\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"pendingChangesIcon\":[{\"properties\":{\"size\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 61.00,
+          "width": 139.00,
+          "x": 1133.00,
+          "y": 11.00,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"92585ef1099a6bc8ee34\",\"layouts\":[{\"id\":0,\"position\":{\"x\":219,\"y\":424,\"z\":8000,\"width\":515,\"height\":318,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\"}],\"Y2\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w1\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\",\"NativeReferenceName\":\"Revenue\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"ecommercePurchases\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\",\"NativeReferenceName\":\"Transactions\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"Month\"},\"Name\":\"www webdoctor ie - GA4 (2).Month\",\"NativeReferenceName\":\"Month1\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"Month\"}}}]},\"queryFieldParametersByRole\":{\"Category\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Parameter3\"}},\"Property\":\"Parameter3\"}}}]},\"columnProperties\":{\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\":{\"displayName\":\"Revenue\"},\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\":{\"displayName\":\"Transactions\"},\"www webdoctor ie - GA4 (2).Month\":{\"displayName\":\"Month\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue - Transactions'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 318.00,
+          "width": 515.00,
+          "x": 219.00,
+          "y": 424.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"92f5788c44367d11a76d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":25,\"y\":1835,\"z\":22000,\"width\":52,\"height\":294,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"textAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Campaign Name'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 294.00,
+          "width": 52.00,
+          "x": 25.00,
+          "y": 1835.00,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"a7a27a53cc3a797be84b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34,\"y\":1472,\"z\":21000,\"width\":52,\"height\":294,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"textAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Medium'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 294.00,
+          "width": 52.00,
+          "x": 34.00,
+          "y": 1472.00,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"c17cb5ffa22a65a86a08\",\"layouts\":[{\"id\":0,\"position\":{\"x\":113,\"y\":1107,\"z\":3000,\"width\":1110,\"height\":332,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\",\"active\":true},{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionSource\"},{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionCampaignName\"}],\"Values\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).sessions)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).engagedSessions)\"},{\"queryRef\":\"www webdoctor ie - GA4 (2).Conv Rate (Engaged Sessions)\"},{\"queryRef\":\"www webdoctor ie - GA4 (2).Engaged Session Rate\"},{\"queryRef\":\"www webdoctor ie - GA4 (2).AOV2\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionDefaultChannelGroup\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\",\"NativeReferenceName\":\"sessionDefaultChannelGroup\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"ecommercePurchases\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\",\"NativeReferenceName\":\"Transactions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\",\"NativeReferenceName\":\"Revenue\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).sessions)\",\"NativeReferenceName\":\"Sessions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"engagedSessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).engagedSessions)\",\"NativeReferenceName\":\"Engaged Sessions\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Conv Rate (Engaged Sessions)\"},\"Name\":\"www webdoctor ie - GA4 (2).Conv Rate (Engaged Sessions)\",\"NativeReferenceName\":\"Conv Rate (Engaged Sessions)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionSource\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionSource\",\"NativeReferenceName\":\"sessionSource\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"AOV2\"},\"Name\":\"www webdoctor ie - GA4 (2).AOV2\",\"NativeReferenceName\":\"AOV2\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionCampaignName\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionCampaignName\",\"NativeReferenceName\":\"sessionCampaignName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Engaged Session Rate\"},\"Name\":\"www webdoctor ie - GA4 (2).Engaged Session Rate\",\"NativeReferenceName\":\"Engaged Session Rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"www webdoctor ie - GA4 (2)\"}},\"Property\":\"sessionDefaultChannelGroup\"}}],\"isPinned\":true},{\"queryRefs\":[\"www webdoctor ie - GA4 (2).sessionSource\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"www webdoctor ie - GA4 (2)\"}},\"Property\":\"sessionSource\"}}],\"isPinned\":true},{\"queryRefs\":[\"www webdoctor ie - GA4 (2).sessionCampaignName\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\":{\"displayName\":\"Transactions\"},\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\":{\"displayName\":\"Revenue\"},\"Sum(www webdoctor ie - GA4 (2).sessions)\":{\"displayName\":\"Sessions\"},\"Sum(www webdoctor ie - GA4 (2).engagedSessions)\":{\"displayName\":\"Engaged Sessions\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"gridVertical\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{\"valuesOnRow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"367D\"}}}},\"selector\":{\"metadata\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"85D\"}}}},\"selector\":{\"metadata\":\"Sum(www webdoctor ie - GA4 (2).ecommercePurchases)\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Default'\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 332.00,
+          "width": 1110.00,
+          "x": 113.00,
+          "y": 1107.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"cf5d53c66a906d941957\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":5000,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"d58b35109328a6522774\",\"layouts\":[{\"id\":0,\"position\":{\"x\":695,\"y\":15,\"z\":10000,\"width\":171,\"height\":70,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Parameter3.Parameter3\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Parameter3\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Parameter3\"},\"Name\":\"Parameter3.Parameter3\",\"NativeReferenceName\":\"Parameter3\"}]},\"syncGroup\":{\"groupName\":\"Parameter\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select Date Interval'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Parameter3\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Parameter3 Fields\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'''www webdoctor ie - GA4 (2)''[Month]'\"}}]]}}}]}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select Date Interval'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Parameter3\"}},\"Property\":\"Parameter3 Fields\"}},\"Right\":{\"Literal\":{\"Value\":\"'''www webdoctor ie - GA4 (2)''[Month]'\"}}}}},\"displayName\":\"Month\"}]}}",
+          "filters": "[]",
+          "height": 70.00,
+          "width": 171.00,
+          "x": 695.00,
+          "y": 15.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"d938c7a6beea2ce970b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":108.75,\"y\":2428.75,\"z\":30000,\"width\":1136.25,\"height\":805,\"tabOrder\":30000}}],\"singleVisual\":{\"visualType\":\"RadarChart1446119667547\",\"projections\":{\"Category\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\"}],\"Y\":[{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\"},{\"queryRef\":\"Sum(www webdoctor ie - GA4 (2).sessions)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionDefaultChannelGroup\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionDefaultChannelGroup\",\"NativeReferenceName\":\"sessionDefaultChannelGroup\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).purchaseRevenue)\",\"NativeReferenceName\":\"Sum of purchaseRevenue\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(www webdoctor ie - GA4 (2).sessions)\",\"NativeReferenceName\":\"Sum of sessions\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"purchaseRevenue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Bottom'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'defaultChannelGroup'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"line\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"displaySettings\":[{\"properties\":{\"minValue\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue by Channel'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D9A9F'\"}}}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 805.00,
+          "width": 1136.25,
+          "x": 108.75,
+          "y": 2428.75,
+          "z": 30000.00
+        },
+        {
+          "config": "{\"name\":\"df24445f79c0d81bd0a3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34,\"y\":48,\"z\":0,\"width\":1245,\"height\":91,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 91.00,
+          "width": 1245.00,
+          "x": 34.00,
+          "y": 48.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"ec55720661c06bc0995d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":50,\"y\":603,\"z\":19000,\"width\":144,\"height\":67,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).Engaged Session Rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Engaged Session Rate\"},\"Name\":\"www webdoctor ie - GA4 (2).Engaged Session Rate\",\"NativeReferenceName\":\"Engaged Session Rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Engaged Session Rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.00,
+          "width": 144.00,
+          "x": 50.00,
+          "y": 603.00,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"f0dc2bc7113990a70b28\",\"layouts\":[{\"id\":0,\"position\":{\"x\":394,\"y\":15,\"z\":25000,\"width\":149,\"height\":54,\"tabOrder\":25000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionSource\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionSource\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionSource\",\"NativeReferenceName\":\"Source\"}]},\"columnProperties\":{\"www webdoctor ie - GA4 (2).sessionSource\":{\"displayName\":\"Source\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 54.00,
+          "width": 149.00,
+          "x": 394.00,
+          "y": 15.00,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"fc68090c168d9007a87e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":49,\"y\":428,\"z\":15000,\"width\":144,\"height\":67,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).AOV2\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"AOV2\"},\"Name\":\"www webdoctor ie - GA4 (2).AOV2\",\"NativeReferenceName\":\"Average Order Value\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"AOV2\"}}}]},\"columnProperties\":{\"www webdoctor ie - GA4 (2).AOV2\":{\"displayName\":\"Average Order Value\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.00,
+          "width": 144.00,
+          "x": 49.00,
+          "y": 428.00,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"feca60152a60b2a1d3ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":543,\"y\":15,\"z\":26000,\"width\":149,\"height\":54,\"tabOrder\":26000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"www webdoctor ie - GA4 (2).sessionMedium\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"www webdoctor ie - GA4 (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sessionMedium\"},\"Name\":\"www webdoctor ie - GA4 (2).sessionMedium\",\"NativeReferenceName\":\"Medium\"}]},\"columnProperties\":{\"www webdoctor ie - GA4 (2).sessionMedium\":{\"displayName\":\"Medium\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 54.00,
+          "width": 149.00,
+          "x": 543.00,
+          "y": 15.00,
+          "z": 26000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "AccessibleOrchid"
+}

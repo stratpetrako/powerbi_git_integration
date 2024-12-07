@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Webdoctor_GA4"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ea4445c4-379e-43bc-b965-cce0a3e01cb0"
+  }
+}

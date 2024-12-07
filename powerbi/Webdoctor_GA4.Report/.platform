@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Webdoctor_GA4"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "eec3786a-9d72-4de6-a2ac-7e5f1e09eb77"
+  }
+}

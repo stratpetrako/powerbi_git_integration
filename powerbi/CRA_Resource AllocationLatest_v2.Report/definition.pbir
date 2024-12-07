@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../CRA_Resource AllocationLatest_v2.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

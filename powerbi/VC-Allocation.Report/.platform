@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "VC-Allocation"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8de62382-d59f-46bc-990e-965f73154210"
+  }
+}

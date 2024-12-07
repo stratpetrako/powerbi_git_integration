@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Mental Health in Tech - Analysis.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

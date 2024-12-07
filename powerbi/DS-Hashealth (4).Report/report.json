@@ -1,0 +1,43 @@
+{
+  "config": "{\"version\":\"5.32\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY22SU03\",\"version\":\"5.33\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"pauseQueries\":false},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "filters": "[]",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY22SU03",
+            "path": "BaseThemes/CY22SU03.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "DS-Hashealth",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectione88c8e8d1798910d6070",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"b014e62f0198be0b1564\",\"layouts\":[{\"id\":0,\"position\":{\"x\":130.14354066985646,\"y\":280.1913875598086,\"z\":0,\"width\":1039.6172248803828,\"height\":157.70334928229667}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"THIS IS A DATASET ONLY REPORT PAGE AND LEFT BLANK INTENTIONALLY\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Data Source: DF-Hashealth, Calendar from Shared DF, Azure Blob Storage\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontStyle\":\"italic\",\"fontSize\":\"18pt\",\"color\":\"#6b007b\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"Destination Workspace: DEV-DS-Hashealth\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontStyle\":\"italic\",\"fontSize\":\"18pt\",\"color\":\"#6b007b\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 157.70,
+          "width": 1039.61,
+          "x": 130.14,
+          "y": 280.19,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

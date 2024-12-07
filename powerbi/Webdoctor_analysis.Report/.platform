@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Webdoctor_analysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f857b169-c55c-42f5-96ca-cfde8326e90b"
+  }
+}

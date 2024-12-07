@@ -1,0 +1,1348 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.114.864.0 (23.02)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Survey_Data\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-IN",
+    "tables": [
+      {
+        "name": "DateTableTemplate_d1f365c7-4cb5-4a2c-9fa3-8ee3de29512e",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "35fbecba-5c41-444d-a794-b91ed2ba42b0",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "3ef712a8-120d-4515-8f48-09ad0c9a2682",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "6c0b9ae8-395b-4c42-9fdd-7b1d87dbe7dd",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "2bb673b0-a4db-4a33-9ecc-63f54164135b",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "f9aa7088-47fb-4aa8-a718-91ed60f105d8",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "b68793eb-8937-480e-a21d-77ef5929a438",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "1e6e0493-e5be-4369-ab2a-3abd4d488b0d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "446f991c-774c-4fa7-8c1c-29a4ebc247ca",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "de9c25f6-0af6-4fd3-9239-a54a2c970425",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "e65f77a3-94b6-472d-8ca3-b114b0532de8",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "283d2ed5-8ad6-48bf-ab46-09dae3f8afc2",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "f02a830c-5f02-4cbb-bb5d-55e0c454fe86"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "faae0783-d007-4845-9a9e-19da6f3e7032",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_d1f365c7-4cb5-4a2c-9fa3-8ee3de29512e-083dabd7-dcdc-4706-a0e9-bf18337a2bac",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Survey_Data",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Are you self-employed?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "550a1b0d-e874-4198-848e-e85156629c22",
+            "sourceColumn": "Are you self-employed?",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "How many employees does your company or organization have?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "74d28c49-b47b-4271-88e0-58b19744da73",
+            "sourceColumn": "How many employees does your company or organization have?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Is your employer primarily a tech company/organization?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ba685218-a04d-466c-bbad-6b4a0afea5aa",
+            "sourceColumn": "Is your employer primarily a tech company/organization?",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Is your primary role within your company related to tech/IT?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b7359bd9-eb54-42f3-a841-4fc6ed30f7eb",
+            "sourceColumn": "Is your primary role within your company related to tech/IT?",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Mental Health Benifits Provided by Employer?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "eb1637c3-ca11-41e6-9bd6-01acfeb923e6",
+            "sourceColumn": "Mental Health Benifits Provided by Employer?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you know the options for mental health care available under your employer-provided coverage?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6b1b3d0c-3c13-4ae4-910d-e62f76d98b49",
+            "sourceColumn": "Do you know the options for mental health care available under your employer-provided coverage?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Has your employer ever formally discussed mental health (for example, as part of a wellness campaign or other official communication)?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9d90f8bc-ba19-418f-8ef9-4c896f715561",
+            "sourceColumn": "Has your employer ever formally discussed mental health (for example, as part of a wellness campaign or other official communication)?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Does your employer offer resources to learn more about mental health concerns and options for seeking help?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ce96983e-bedb-4890-9a52-04e79a9f2ed7",
+            "sourceColumn": "Does your employer offer resources to learn more about mental health concerns and options for seeking help?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Is your anonymity protected if you choose to take advantage of mental health or substance abuse treatment resources provided by your employer?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "df1f533a-b019-41c5-bab7-db2196af3af7",
+            "sourceColumn": "Is your anonymity protected if you choose to take advantage of mental health or substance abuse treatment resources provided by your employer?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "If a mental health issue prompted you to request a medical leave from work, asking for that leave would be:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "308ccacf-5f9d-4b7f-a0ba-ede4ca5eb0a1",
+            "sourceColumn": "If a mental health issue prompted you to request a medical leave from work, asking for that leave would be:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you think that discussing a mental health disorder with your employer would have negative consequences?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "56155263-380b-43f6-a1e8-06248f23933c",
+            "sourceColumn": "Do you think that discussing a mental health disorder with your employer would have negative consequences?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you think that discussing a physical health issue with your employer would have negative consequences?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "db14a2d6-0c36-4800-980d-30863f32d603",
+            "sourceColumn": "Do you think that discussing a physical health issue with your employer would have negative consequences?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Would you feel comfortable discussing a mental health disorder with your coworkers?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "13f5cdf6-23b4-47ce-b9b7-70126da9a84a",
+            "sourceColumn": "Would you feel comfortable discussing a mental health disorder with your coworkers?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Would you feel comfortable discussing a mental health disorder with your direct supervisor(s)?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f09b9c0e-8b5c-4e59-8aa4-598b1a133d16",
+            "sourceColumn": "Would you feel comfortable discussing a mental health disorder with your direct supervisor(s)?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you feel that your employer takes mental health as seriously as physical health?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "debaefa2-b304-4b28-91d5-4d0718b57c3c",
+            "sourceColumn": "Do you feel that your employer takes mental health as seriously as physical health?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Have you heard of or observed negative consequences for co-workers who have been open about mental health issues in your workplace?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ae005c97-3406-454d-bccb-6c4f7a02c0a3",
+            "sourceColumn": "Have you heard of or observed negative consequences for co-workers who have been open about mental health issues in your workplace?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you have medical coverage (private insurance or state-provided) which includes treatment of  mental health issues?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4a195af4-1195-438a-8b72-7eb09b7fe865",
+            "sourceColumn": "Do you have medical coverage (private insurance or state-provided) which includes treatment of  mental health issues?",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Do you know local or online resources to seek help for a mental health disorder?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b05cf79f-910b-4390-b01f-daa79f2fa2a2",
+            "sourceColumn": "Do you know local or online resources to seek help for a mental health disorder?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "If you have been diagnosed or treated for a mental health disorder, do you ever reveal this to clients or business contacts?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f1bc19d9-c5fa-42d3-9da0-8512289e52d7",
+            "sourceColumn": "If you have been diagnosed or treated for a mental health disorder, do you ever reveal this to clients or business contacts?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "If you have revealed a mental health issue to a client or business contact, do you believe this has impacted you negatively?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1491cd38-4d48-477a-b60e-b99d05f31cb0",
+            "sourceColumn": "If you have revealed a mental health issue to a client or business contact, do you believe this has impacted you negatively?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "If you have been diagnosed or treated for a mental health disorder, do you ever reveal this to coworkers or employees?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2646251a-8116-4de3-b9db-3e7148b44303",
+            "sourceColumn": "If you have been diagnosed or treated for a mental health disorder, do you ever reveal this to coworkers or employees?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "If you have revealed a mental health issue to a coworker or employee, do you believe this has impacted you negatively?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "509d196d-89ad-4b60-b3cd-bf5ff51a131a",
+            "sourceColumn": "If you have revealed a mental health issue to a coworker or employee, do you believe this has impacted you negatively?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you believe your productivity is ever affected by a mental health issue?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "16d4411c-12c8-4b88-829f-d7690e05f326",
+            "sourceColumn": "Do you believe your productivity is ever affected by a mental health issue?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "If yes, what percentage of your work time (time performing primary or secondary job functions) is affected by a mental health issue?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "14955b8e-3280-4aa6-9270-f0beec34ff34",
+            "sourceColumn": "If yes, what percentage of your work time (time performing primary or secondary job functions) is affected by a mental health issue?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you have previous employers?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f7faa2f0-5b1a-46b2-83b9-9d74c4235373",
+            "sourceColumn": "Do you have previous employers?",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Have your previous employers provided mental health benefits?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "af615da7-b879-4ff6-b9ca-4cb6bff0995a",
+            "sourceColumn": "Have your previous employers provided mental health benefits?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Were you aware of the options for mental health care provided by your previous employers?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cdba865d-a0bd-4bda-9a7d-9dc9a50327b6",
+            "sourceColumn": "Were you aware of the options for mental health care provided by your previous employers?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Did your previous employers ever formally discuss mental health (as part of a wellness campaign or other official communication)?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b1e08af1-2ea9-4822-900e-34b173314481",
+            "sourceColumn": "Did your previous employers ever formally discuss mental health (as part of a wellness campaign or other official communication)?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Did your previous employers provide resources to learn more about mental health issues and how to seek help?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ef81f0f7-7f21-4271-861d-9262abbdbf6e",
+            "sourceColumn": "Did your previous employers provide resources to learn more about mental health issues and how to seek help?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Was your anonymity protected if you chose to take advantage of mental health or substance abuse treatment resources with previous employers?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a2e50293-0cf1-46f8-8355-491f5d065759",
+            "sourceColumn": "Was your anonymity protected if you chose to take advantage of mental health or substance abuse treatment resources with previous employers?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you think that discussing a mental health disorder with previous employers would have negative consequences?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "78c8b428-7ad1-4f59-8021-a248c0b00121",
+            "sourceColumn": "Do you think that discussing a mental health disorder with previous employers would have negative consequences?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you think that discussing a physical health issue with previous employers would have negative consequences?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "adfc4f99-90f8-4971-8148-69729bf0f25b",
+            "sourceColumn": "Do you think that discussing a physical health issue with previous employers would have negative consequences?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Would you have been willing to discuss a mental health issue with your previous co-workers?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e2da9ce4-5191-4b03-9c40-415df0348b89",
+            "sourceColumn": "Would you have been willing to discuss a mental health issue with your previous co-workers?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Would you have been willing to discuss a mental health issue with your direct supervisor(s)?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d4330fce-8d63-4722-a7cd-98ff35133064",
+            "sourceColumn": "Would you have been willing to discuss a mental health issue with your direct supervisor(s)?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Did you feel that your previous employers took mental health as seriously as physical health?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fddaf479-1c0c-446e-8e3b-fba315d8ee81",
+            "sourceColumn": "Did you feel that your previous employers took mental health as seriously as physical health?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Did you hear of or observe negative consequences for co-workers with mental health issues in your previous workplaces?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0916ee8e-8ff3-4056-863d-a57e8650a930",
+            "sourceColumn": "Did you hear of or observe negative consequences for co-workers with mental health issues in your previous workplaces?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Would you be willing to bring up a physical health issue with a potential employer in an interview?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9fcebef1-4394-4299-a0da-74552ee967c9",
+            "sourceColumn": "Would you be willing to bring up a physical health issue with a potential employer in an interview?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Would you bring up a mental health issue with a potential employer in an interview?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "93357ef7-cac2-44ef-87d3-8827ccad6034",
+            "sourceColumn": "Would you bring up a mental health issue with a potential employer in an interview?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you feel that being identified as a person with a mental health issue would hurt your career?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6108c842-616b-4d03-b9d9-de3de8e92ff1",
+            "sourceColumn": "Do you feel that being identified as a person with a mental health issue would hurt your career?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you think that team members/co-workers would view you more negatively if they knew you suffered from a mental health issue?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6c70c007-207e-4975-9dc4-e6bf88a59f10",
+            "sourceColumn": "Do you think that team members/co-workers would view you more negatively if they knew you suffered from a mental health issue?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "How willing would you be to share with friends and family that you have a mental illness?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "513d721e-eea5-4130-bf17-81f7491d3ed0",
+            "sourceColumn": "How willing would you be to share with friends and family that you have a mental illness?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Have you observed or experienced an unsupportive or badly handled response to a mental health issue in your current or previous workplace?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ceb99bf8-00f4-446b-9294-961e0982dfe2",
+            "sourceColumn": "Have you observed or experienced an unsupportive or badly handled response to a mental health issue in your current or previous workplace?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Have your observations of how another individual who discussed a mental health disorder made you less likely to reveal a mental health issue yourself in your current workplace?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0b18103a-77db-4dd8-8cd8-b3a0932fbbcc",
+            "sourceColumn": "Have your observations of how another individual who discussed a mental health disorder made you less likely to reveal a mental health issue yourself in your current workplace?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you have a family history of mental illness?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e82f6964-0c51-4e97-93e8-f562e61c5ce2",
+            "sourceColumn": "Do you have a family history of mental illness?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Have you had a mental health disorder in the past?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dc65caa2-414b-4bfd-b632-6d8f36a9bbd4",
+            "sourceColumn": "Have you had a mental health disorder in the past?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you currently have a mental health disorder?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9310e3e0-67bd-4a8e-a894-b54e8677f70c",
+            "sourceColumn": "Do you currently have a mental health disorder?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "If yes, what condition(s) have you been diagnosed with?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fd5354d1-4b4a-48f1-bda6-82ffb1987e41",
+            "sourceColumn": "If yes, what condition(s) have you been diagnosed with?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "If maybe, what condition(s) do you believe you have?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "11e9a3c1-8a40-4fe1-b67d-3969bd8dd94b",
+            "sourceColumn": "If maybe, what condition(s) do you believe you have?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Have you been diagnosed with a mental health condition by a medical professional?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a3e4e4bb-1c23-43cc-b318-e84f02be4c26",
+            "sourceColumn": "Have you been diagnosed with a mental health condition by a medical professional?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "If so, what condition(s) were you diagnosed with?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8c69d966-30e8-4957-af9a-fc0124865171",
+            "sourceColumn": "If so, what condition(s) were you diagnosed with?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Have you ever sought treatment for a mental health issue from a mental health professional?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ce2ecec2-dfdf-4d9d-bb20-9fe43b700fc4",
+            "sourceColumn": "Have you ever sought treatment for a mental health issue from a mental health professional?",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "If you have a mental health issue, do you feel that it interferes with your work when being treated effectively?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6214d48c-dc90-462d-9e21-f443ccf04740",
+            "sourceColumn": "If you have a mental health issue, do you feel that it interferes with your work when being treated effectively?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "If you have a mental health issue, do you feel that it interferes with your work when NOT being treated effectively?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "71c5c807-e798-44d0-9129-2ace088f89e3",
+            "sourceColumn": "If you have a mental health issue, do you feel that it interferes with your work when NOT being treated effectively?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "What is your age?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b17e7baa-2815-46db-baba-0234f779426a",
+            "sourceColumn": "What is your age?",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "What is your gender?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"Survey_Data\",\"TableItemName\":\"Gender\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "725977e6-68c1-4672-89af-d282c4abb683",
+            "sourceColumn": "What is your gender?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "What country do you live in?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ba958143-8b99-478b-a062-138bac6fda58",
+            "sourceColumn": "What country do you live in?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "What US state or territory do you live in?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "87e00e2f-cb30-4558-8a71-05f45ef2e32d",
+            "sourceColumn": "What US state or territory do you live in?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "What country do you work in?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"Survey_Data\",\"TableItemName\":\"Job Location\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3722cd11-825b-48ad-a2aa-78a4fd5be653",
+            "sourceColumn": "What country do you work in?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "What US state or territory do you work in?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7067d5e0-d916-4eae-949b-4c36708dd9fa",
+            "sourceColumn": "What US state or territory do you work in?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Which of the following best describes your work position?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3087f473-06b6-4196-8643-3016e83238f3",
+            "sourceColumn": "Which of the following best describes your work position?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you work remotely?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b2f45451-3006-46bd-b555-0fde5aebcd4f",
+            "sourceColumn": "Do you work remotely?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Job Location",
+            "annotations": [
+              {
+                "name": "GroupingDesignState",
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"s\",\"Entity\":\"Survey_Data\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"What country do you work in?\"}}],\"GroupItems\":[{\"DisplayName\":\"(Blank)\",\"BlankDefaultPlaceholder\":true},{\"DisplayName\":\"Canada\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"What country do you work in?\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Canada'\"}}]]}}},{\"DisplayName\":\"Germany\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"What country do you work in?\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Germany'\"}}]]}}},{\"DisplayName\":\"Netherlands\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"What country do you work in?\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Netherlands'\"}}]]}}},{\"DisplayName\":\"United Kingdom\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"What country do you work in?\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'United Kingdom'\"}}]]}}},{\"DisplayName\":\"United States of America\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"What country do you work in?\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'United States of America'\"}}]]}}},{\"DisplayName\":\"Others\"}]}"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "SWITCH(",
+              "  TRUE,",
+              "  ISBLANK('Survey_Data'[What country do you work in?]),",
+              "  \"(Blank)\",",
+              "  'Survey_Data'[What country do you work in?] IN {\"Canada\"},",
+              "  \"Canada\",",
+              "  'Survey_Data'[What country do you work in?] IN {\"Germany\"},",
+              "  \"Germany\",",
+              "  'Survey_Data'[What country do you work in?] IN {\"Netherlands\"},",
+              "  \"Netherlands\",",
+              "  'Survey_Data'[What country do you work in?] IN {\"United Kingdom\"},",
+              "  \"United Kingdom\",",
+              "  'Survey_Data'[What country do you work in?] IN {\"United States of America\"},",
+              "  \"United States of America\",",
+              "  \"Others\"",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "GroupingMetadata",
+                "type": "json",
+                "value": {
+                  "groupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Survey_Data"
+                          }
+                        },
+                        "Property": "What country do you work in?"
+                      }
+                    }
+                  ],
+                  "version": 0
+                }
+              }
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "cd790c80-f35c-4166-9961-ef173abd9f49",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "GroupingDesignState",
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"s\",\"Entity\":\"Survey_Data\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"What is your gender?\"}}],\"GroupItems\":[{\"DisplayName\":\"(Blank)\",\"BlankDefaultPlaceholder\":true},{\"DisplayName\":\"Female\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"What is your gender?\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Cis female'\"}}],[{\"Literal\":{\"Value\":\"'Cisgender Female'\"}}],[{\"Literal\":{\"Value\":\"'Cis-woman'\"}}],[{\"Literal\":{\"Value\":\"'F'\"}}],[{\"Literal\":{\"Value\":\"'fem'\"}}],[{\"Literal\":{\"Value\":\"'Female'\"}}],[{\"Literal\":{\"Value\":\"'Female (props for making this a freeform field, though)'\"}}],[{\"Literal\":{\"Value\":\"'Female assigned at birth'\"}}],[{\"Literal\":{\"Value\":\"'Female or Multi-Gender Femme'\"}}],[{\"Literal\":{\"Value\":\"'female/woman'\"}}],[{\"Literal\":{\"Value\":\"'female-bodied; no feelings about gender'\"}}],[{\"Literal\":{\"Value\":\"'I identify as female.'\"}}],[{\"Literal\":{\"Value\":\"'Woman'\"}}]]}}},{\"DisplayName\":\"Male\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"What is your gender?\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Cis male'\"}}],[{\"Literal\":{\"Value\":\"'cis man'\"}}],[{\"Literal\":{\"Value\":\"'cisdude'\"}}],[{\"Literal\":{\"Value\":\"'Dude'\"}}],[{\"Literal\":{\"Value\":\"'I''m a man why didn''t you make this a drop down question. You should of asked sex? And I would of answered yes please. Seriously how much text can this take?'\"}}],[{\"Literal\":{\"Value\":\"'M'\"}}],[{\"Literal\":{\"Value\":\"'M|'\"}}],[{\"Literal\":{\"Value\":\"'mail'\"}}],[{\"Literal\":{\"Value\":\"'Male'\"}}],[{\"Literal\":{\"Value\":\"'Male (cis)'\"}}],[{\"Literal\":{\"Value\":\"'Male.'\"}}],[{\"Literal\":{\"Value\":\"'man'\"}}],[{\"Literal\":{\"Value\":\"'Sex is male'\"}}]]}}},{\"DisplayName\":\"Others\"}]}"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "SWITCH(",
+              "  TRUE,",
+              "  ISBLANK('Survey_Data'[What is your gender?]),",
+              "  \"(Blank)\",",
+              "  'Survey_Data'[What is your gender?] IN {\"Cis female\",",
+              "    \"Cisgender Female\",",
+              "    \"Cis-woman\",",
+              "    \"F\",",
+              "    \"fem\",",
+              "    \"Female\",",
+              "    \"Female (props for making this a freeform field, though)\",",
+              "    \"Female assigned at birth\",",
+              "    \"Female or Multi-Gender Femme\",",
+              "    \"female/woman\",",
+              "    \"female-bodied; no feelings about gender\",",
+              "    \"I identify as female.\",",
+              "    \"Woman\"},",
+              "  \"Female\",",
+              "  'Survey_Data'[What is your gender?] IN {\"Cis male\",",
+              "    \"cis man\",",
+              "    \"cisdude\",",
+              "    \"Dude\",",
+              "    \"I'm a man why didn't you make this a drop down question. You should of asked sex? And I would of answered yes please. Seriously how much text can this take?\",",
+              "    \"M\",",
+              "    \"M|\",",
+              "    \"mail\",",
+              "    \"Male\",",
+              "    \"Male (cis)\",",
+              "    \"Male.\",",
+              "    \"man\",",
+              "    \"Sex is male\"},",
+              "  \"Male\",",
+              "  \"Others\"",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "GroupingMetadata",
+                "type": "json",
+                "value": {
+                  "groupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Survey_Data"
+                          }
+                        },
+                        "Property": "What is your gender?"
+                      }
+                    }
+                  ],
+                  "version": 0
+                }
+              }
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "b9f2b230-1a81-4414-9879-76193f9b538f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Age Bin",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "IF('Survey_Data'[What is your age?]<20,\" Under 20\",",
+              "          IF('Survey_Data'[What is your age?]>=20 && 'Survey_Data'[What is your age?]<30,\"20-29\",",
+              "          IF('Survey_Data'[What is your age?]>=30 && 'Survey_Data'[What is your age?]<40,\"30-39\",",
+              "          IF('Survey_Data'[What is your age?]>=40 && 'Survey_Data'[What is your age?]<50,\"40-49\",",
+              "          IF('Survey_Data'[What is your age?]>=50 && 'Survey_Data'[What is your age?]<60,\"50-59\",",
+              "          \"60+\")))))",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "4ce2568e-afb9-4f37-9f7a-c1465427731c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "701ad6a5-57b8-4ee2-bc59-dc0c9f4691c7",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "4148cb34-d8b1-46ff-97c4-9ea51d26d1bf",
+        "measures": [
+          {
+            "name": "Responses",
+            "expression": "COUNTROWS(Survey_Data)",
+            "formatString": "0",
+            "lineageTag": "b1a14c7b-ca6c-432e-8b1f-3e14e8e09be3"
+          },
+          {
+            "name": "Percentage of Employees Diagnosed with Mental Health Condition by Medical Proffesonal",
+            "expression": "DIVIDE(COUNTROWS(FILTER(Survey_Data, Survey_Data[Have you been diagnosed with a mental health condition by a medical professional?] = \"Yes\")), COUNTROWS('Survey_Data'))",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "a7eecced-47ea-4165-9653-6623c8bd8385"
+          },
+          {
+            "name": "Percentage of Employees Not Comfortable Discussing Mental Health Issues with Supervisors",
+            "expression": "DIVIDE(COUNTROWS(FILTER(Survey_Data, Survey_Data[Would you feel comfortable discussing a mental health disorder with your direct supervisor(s)?] = \"No\")), COUNTROWS('Survey_Data'))",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "6ee720e9-ecca-40ee-bd4c-dd4c41c04553"
+          },
+          {
+            "name": "Percentage of Employees who Perceive Employer's Lack of Priority towards Mental Health Compared to Physical Health",
+            "expression": "DIVIDE(COUNTROWS(FILTER(Survey_Data, Survey_Data[Do you feel that your employer takes mental health as seriously as physical health?] = \"No\")), COUNTROWS('Survey_Data'))",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "3d809bfe-ec80-4418-aa05-750464978c08"
+          },
+          {
+            "name": "Percentage of Employees Not Comfortable Discussing Mental Health Issues with Co-Workers",
+            "expression": "DIVIDE(COUNTROWS(FILTER(Survey_Data, Survey_Data[Would you feel comfortable discussing a mental health disorder with your coworkers?] = \"No\")), COUNTROWS('Survey_Data'))",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "2c2de114-4d3b-45ed-8e83-c63951ce6f9c"
+          },
+          {
+            "name": "Availability of Mental Health Resources & Education",
+            "expression": "DIVIDE(COUNTROWS(FILTER(Survey_Data, Survey_Data[Does your employer offer resources to learn more about mental health concerns and options for seeking help?] = \"Yes\")), COUNTROWS('Survey_Data'))",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "9474a8ee-91a0-4bf7-8a9b-2532446c7dea"
+          },
+          {
+            "name": "Percentage of Employees who Believe Discussing Mental Health Disorders with Employer will Result in Negative Consequences",
+            "expression": "DIVIDE(COUNTROWS(FILTER(Survey_Data, Survey_Data[Do you think that discussing a mental health disorder with your employer would have negative consequences?] = \"Yes\")), COUNTROWS('Survey_Data'))",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "84036ceb-9184-4d75-b4ec-0f7583864c2c"
+          },
+          {
+            "name": "Percentage of Tech Employers",
+            "expression": "DIVIDE(COUNTROWS(FILTER(Survey_Data, Survey_Data[Is your employer primarily a tech company/organization?] = 1)), COUNTROWS('Survey_Data'))",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "9053c42a-409f-4da5-af3a-4f52e26bb086"
+          },
+          {
+            "name": "Remote Workers (Always)",
+            "expression": "DIVIDE(COUNTROWS(FILTER(Survey_Data, Survey_Data[Do you work remotely?] = \"Always\")), COUNTROWS('Survey_Data'))",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "c19f13fd-cbf4-45b4-b386-0340d50c94e3"
+          },
+          {
+            "name": "Remote Workers (Sometimes)",
+            "expression": "DIVIDE(COUNTROWS(FILTER(Survey_Data, Survey_Data[Do you work remotely?] = \"Sometimes\")), COUNTROWS('Survey_Data'))",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "5314a024-c05d-4c7c-a7a7-0d3a5c31f700"
+          },
+          {
+            "name": "Count of Region total for Region",
+            "expression": [
+              "",
+              "CALCULATE(COUNTA('Survey_Data'[Region]), ALL('Survey_Data'[Region]))"
+            ],
+            "extendedProperties": [
+              {
+                "name": "MeasureTemplate",
+                "type": "json",
+                "value": {
+                  "daxTemplateName": "TotalForAllCategory",
+                  "version": 0
+                }
+              }
+            ],
+            "formatString": "0",
+            "lineageTag": "716b716d-87f7-4562-8de5-0708c872fb21"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Survey_Data-3c283305-6133-48f9-b649-3beba957611f",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\arkos\\OneDrive\\Documents\\Webdoctor Assessment\\Survey_Data.csv\"),[Delimiter=\",\", Columns=61, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}, {\"Column2\", type text}, {\"Column3\", type text}, {\"Column4\", type text}, {\"Column5\", type text}, {\"Column6\", type text}, {\"Column7\", type text}, {\"Column8\", type text}, {\"Column9\", type text}, {\"Column10\", type text}, {\"Column11\", type text}, {\"Column12\", type text}, {\"Column13\", type text}, {\"Column14\", type text}, {\"Column15\", type text}, {\"Column16\", type text}, {\"Column17\", type text}, {\"Column18\", type text}, {\"Column19\", type text}, {\"Column20\", type text}, {\"Column21\", type text}, {\"Column22\", type text}, {\"Column23\", type text}, {\"Column24\", type text}, {\"Column25\", type text}, {\"Column26\", type text}, {\"Column27\", type text}, {\"Column28\", type text}, {\"Column29\", type text}, {\"Column30\", type text}, {\"Column31\", type text}, {\"Column32\", type text}, {\"Column33\", type text}, {\"Column34\", type text}, {\"Column35\", type text}, {\"Column36\", type text}, {\"Column37\", type text}, {\"Column38\", type text}, {\"Column39\", type text}, {\"Column40\", type text}, {\"Column41\", type text}, {\"Column42\", type text}, {\"Column43\", type text}, {\"Column44\", type text}, {\"Column45\", type text}, {\"Column46\", type text}, {\"Column47\", type text}, {\"Column48\", type text}, {\"Column49\", type text}, {\"Column50\", type text}, {\"Column51\", type text}, {\"Column52\", type text}, {\"Column53\", type text}, {\"Column54\", type text}, {\"Column55\", type text}, {\"Column56\", type text}, {\"Column57\", type text}, {\"Column58\", type text}, {\"Column59\", type text}, {\"Column60\", type text}, {\"Column61\", type text}}),",
+                "    #\"Removed Top Rows\" = Table.Skip(#\"Changed Type\",1),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Removed Top Rows\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Are you self-employed?\", Int64.Type}, {\"How many employees does your company or organization have?\", type text}, {\"Is your employer primarily a tech company/organization?\", Int64.Type}, {\"Is your primary role within your company related to tech/IT?\", Int64.Type}, {\"Does your employer provide mental health benefits as part of healthcare coverage?\", type text}, {\"Do you know the options for mental health care available under your employer-provided coverage?\", type text}, {\"Has your employer ever formally discussed mental health (for example, as part of a wellness campaign or other official communication)?\", type text}, {\"Does your employer offer resources to learn more about mental health concerns and options for seeking help?\", type text}, {\"Is your anonymity protected if you choose to take advantage of mental health or substance abuse treatment resources provided by your employer?\", type text}, {\"If a mental health issue prompted you to request a medical leave from work, asking for that leave would be:\", type text}, {\"Do you think that discussing a mental health disorder with your employer would have negative consequences?\", type text}, {\"Do you think that discussing a physical health issue with your employer would have negative consequences?\", type text}, {\"Would you feel comfortable discussing a mental health disorder with your coworkers?\", type text}, {\"Would you feel comfortable discussing a mental health disorder with your direct supervisor(s)?\", type text}, {\"Do you feel that your employer takes mental health as seriously as physical health?\", type text}, {\"Have you heard of or observed negative consequences for co-workers who have been open about mental health issues in your workplace?\", type text}, {\"Do you have medical coverage (private insurance or state-provided) which includes treatment of  mental health issues?\", Int64.Type}, {\"Do you know local or online resources to seek help for a mental health disorder?\", type text}, {\"If you have been diagnosed or treated for a mental health disorder, do you ever reveal this to clients or business contacts?\", type text}, {\"If you have revealed a mental health issue to a client or business contact, do you believe this has impacted you negatively?\", type text}, {\"If you have been diagnosed or treated for a mental health disorder, do you ever reveal this to coworkers or employees?\", type text}, {\"If you have revealed a mental health issue to a coworker or employee, do you believe this has impacted you negatively?\", type text}, {\"Do you believe your productivity is ever affected by a mental health issue?\", type text}, {\"If yes, what percentage of your work time (time performing primary or secondary job functions) is affected by a mental health issue?\", type text}, {\"Do you have previous employers?\", Int64.Type}, {\"Have your previous employers provided mental health benefits?\", type text}, {\"Were you aware of the options for mental health care provided by your previous employers?\", type text}, {\"Did your previous employers ever formally discuss mental health (as part of a wellness campaign or other official communication)?\", type text}, {\"Did your previous employers provide resources to learn more about mental health issues and how to seek help?\", type text}, {\"Was your anonymity protected if you chose to take advantage of mental health or substance abuse treatment resources with previous employers?\", type text}, {\"Do you think that discussing a mental health disorder with previous employers would have negative consequences?\", type text}, {\"Do you think that discussing a physical health issue with previous employers would have negative consequences?\", type text}, {\"Would you have been willing to discuss a mental health issue with your previous co-workers?\", type text}, {\"Would you have been willing to discuss a mental health issue with your direct supervisor(s)?\", type text}, {\"Did you feel that your previous employers took mental health as seriously as physical health?\", type text}, {\"Did you hear of or observe negative consequences for co-workers with mental health issues in your previous workplaces?\", type text}, {\"Would you be willing to bring up a physical health issue with a potential employer in an interview?\", type text}, {\"Would you bring up a mental health issue with a potential employer in an interview?\", type text}, {\"Do you feel that being identified as a person with a mental health issue would hurt your career?\", type text}, {\"Do you think that team members/co-workers would view you more negatively if they knew you suffered from a mental health issue?\", type text}, {\"How willing would you be to share with friends and family that you have a mental illness?\", type text}, {\"Have you observed or experienced an unsupportive or badly handled response to a mental health issue in your current or previous workplace?\", type text}, {\"Have your observations of how another individual who discussed a mental health disorder made you less likely to reveal a mental health issue yourself in your current workplace?\", type text}, {\"Do you have a family history of mental illness?\", type text}, {\"Have you had a mental health disorder in the past?\", type text}, {\"Do you currently have a mental health disorder?\", type text}, {\"If yes, what condition(s) have you been diagnosed with?\", type text}, {\"If maybe, what condition(s) do you believe you have?\", type text}, {\"Have you been diagnosed with a mental health condition by a medical professional?\", type text}, {\"If so, what condition(s) were you diagnosed with?\", type text}, {\"Have you ever sought treatment for a mental health issue from a mental health professional?\", Int64.Type}, {\"If you have a mental health issue, do you feel that it interferes with your work when being treated effectively?\", type text}, {\"If you have a mental health issue, do you feel that it interferes with your work when NOT being treated effectively?\", type text}, {\"What is your age?\", Int64.Type}, {\"What is your gender?\", type text}, {\"What country do you live in?\", type text}, {\"What US state or territory do you live in?\", type text}, {\"What country do you work in?\", type text}, {\"What US state or territory do you work in?\", type text}, {\"Which of the following best describes your work position?\", type text}, {\"Do you work remotely?\", type text}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type1\",{{\"Does your employer provide mental health benefits as part of healthcare coverage?\", \"Mental Health Benifits Provided by Employer?\"}}),",
+                "    #\"Added Conditional Column\" = Table.AddColumn(#\"Renamed Columns\", \"Custom\", each if [#\"What country do you work in?\"] = \"Germany\" then \"EU\" else if [#\"What country do you work in?\"] = \"Netherlands\" then \"EU\" else if [#\"What country do you work in?\"] = \"Sweden\" then \"EU\" else if [#\"What country do you work in?\"] = \"Ireland\" then \"EU\" else if [#\"What country do you work in?\"] = \"France\" then \"EU\" else if [#\"What country do you work in?\"] = \"Bulgaria\" then \"EU\" else if [#\"What country do you work in?\"] = \"Finland\" then \"EU\" else if [#\"What country do you work in?\"] = \"Denmark\" then \"EU\" else if [#\"What country do you work in?\"] = \"Belgium\" then \"EU\" else if [#\"What country do you work in?\"] = \"Austria\" then \"EU\" else if [#\"What country do you work in?\"] = \"Poland\" then \"EU\" else if [#\"What country do you work in?\"] = \"Romania\" then \"EU\" else if [#\"What country do you work in?\"] = \"Spain\" then \"EU\" else if [#\"What country do you work in?\"] = \"Czech Republic\" then \"EU\" else if [#\"What country do you work in?\"] = \"Italy\" then \"EU\" else if [#\"What country do you work in?\"] = \"Estonia\" then \"EU\" else if [#\"What country do you work in?\"] = \"Lithuania\" then \"EU\" else if [#\"What country do you work in?\"] = \"Hungary\" then \"EU\" else if [#\"What country do you work in?\"] = \"Greece\" then \"EU\" else if [#\"What country do you work in?\"] = \"Slovakia\" then \"EU\" else if [#\"What country do you work in?\"] = \"United States of America\" then \"USA\" else if [#\"What country do you work in?\"] = \"United Kingdom\" then \"UK\" else \"Other Regions\"),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Added Conditional Column\",{{\"Custom\", \"Region\"}})",
+                "in",
+                "    #\"Renamed Columns1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Mental_Health_in_Tech_Survey_Insights_Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1f7ee315-3cac-40b8-9206-3d76b9b7769e"
+  }
+}

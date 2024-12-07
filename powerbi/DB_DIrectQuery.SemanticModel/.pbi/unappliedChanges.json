@@ -1,0 +1,202 @@
+{
+  "version": "1.0",
+  "conceptualSchemaSettings": {},
+  "queries": [
+    {
+      "name": "maria_hcp_sessions",
+      "lineageTag": "5f8032ce-77b1-4919-b4ed-9bb960b19e38",
+      "navigationStepName": "Navigation",
+      "text": [
+        "let",
+        "    Source = MariaDB.Contents(\"4.207.168.214\", \"webdoctor\", false)",
+        "in",
+        "    Source"
+      ],
+      "isDirectQuery": true,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MariaDB.Contents(\\\"4.207.168.214\\\", \\\"webdoctor\\\", null),\\n    hcp_sessions_Table = Source{[Name=\\\"hcp_sessions\\\",Kind=\\\"Table\\\"]}[Data]\\nin\\n    hcp_sessions_Table\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    },
+    {
+      "name": "mysql_hcp_sessions",
+      "lineageTag": "58257480-9392-4fbf-9448-2e99c0ca915a",
+      "text": [
+        "let",
+        "    Source = MySQL.Database(\"4.207.168.214\", \"webdoctor\", [ReturnSingleDatabase=true, Query=\"select * from hcp_sessions where created_at > DATE_ADD(NOW(), INTERVAL -90 DAY)\"])",
+        "in",
+        "    Source"
+      ],
+      "isDirectQuery": false,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MySQL.Database(\\\"4.207.168.214\\\", \\\"webdoctor\\\", [ReturnSingleDatabase=true, Query=\\\"select * from hcp_sessions where created_at > DATE_ADD(NOW(), INTERVAL -90 DAY)\\\"])\\nin\\n    Source\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    },
+    {
+      "name": "hcp_appointments",
+      "lineageTag": "e685973a-846a-44ae-be62-5c860b4c7680",
+      "text": [
+        "let",
+        "    Source = MariaDB.Contents(\"4.207.168.214\", \"webdoctor\", null),",
+        "    hcp_appointments_Table = Source{[Name=\"hcp_appointments\",Kind=\"Table\"]}[Data]",
+        "in",
+        "    hcp_appointments_Table"
+      ],
+      "isDirectQuery": true,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MariaDB.Contents(\\\"4.207.168.214\\\", \\\"webdoctor\\\", null),\\n    hcp_appointments_Table = Source{[Name=\\\"hcp_appointments\\\",Kind=\\\"Table\\\"]}[Data]\\nin\\n    hcp_appointments_Table\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    },
+    {
+      "name": "payments",
+      "lineageTag": "5815f83b-6435-4e63-b5b5-c12eec6f8b99",
+      "navigationStepName": "Navigation",
+      "text": [
+        "let",
+        "    Source = MariaDB.Contents(\"4.207.168.214\", \"webdoctor\", null),",
+        "    payments_Table = Source{[Name=\"payments\",Kind=\"Table\"]}[Data]",
+        "in",
+        "    payments_Table"
+      ],
+      "isDirectQuery": true,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MariaDB.Contents(\\\"4.207.168.214\\\", \\\"webdoctor\\\", null),\\n    payments_Table = Source{[Name=\\\"payments\\\",Kind=\\\"Table\\\"]}[Data]\\nin\\n    payments_Table\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    },
+    {
+      "name": "sessions",
+      "lineageTag": "e5bbce60-a22b-47fe-9c70-c0aa31a71c50",
+      "text": [
+        "let",
+        "    Source = MariaDB.Contents(\"4.207.168.214\", \"webdoctor\", null),",
+        "    sessions_Table = Source{[Name=\"sessions\",Kind=\"Table\"]}[Data]",
+        "in",
+        "    sessions_Table"
+      ],
+      "isDirectQuery": true,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MariaDB.Contents(\\\"4.207.168.214\\\", \\\"webdoctor\\\", null),\\n    sessions_Table = Source{[Name=\\\"sessions\\\",Kind=\\\"Table\\\"]}[Data]\\nin\\n    sessions_Table\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    },
+    {
+      "name": "user plans",
+      "lineageTag": "9b9b21ef-e936-48d0-bdd0-f966273620d7",
+      "text": [
+        "let",
+        "    Source = MariaDB.Contents(\"4.207.168.214\", \"webdoctor\", null),",
+        "    user_plans_Table = Source{[Name=\"user_plans\",Kind=\"Table\"]}[Data]",
+        "in",
+        "    user_plans_Table"
+      ],
+      "isDirectQuery": true,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MariaDB.Contents(\\\"4.207.168.214\\\", \\\"webdoctor\\\", null),\\n    user_plans_Table = Source{[Name=\\\"user_plans\\\",Kind=\\\"Table\\\"]}[Data]\\nin\\n    user_plans_Table\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    },
+    {
+      "name": "consultations",
+      "lineageTag": "70b5c2a5-4a0a-45c5-b6c7-382c2a2beec9",
+      "text": [
+        "let",
+        "    Source = MariaDB.Contents(\"4.207.168.214\", \"webdoctor\", null),",
+        "    consultations_Table = Source{[Name=\"consultations\",Kind=\"Table\"]}[Data]",
+        "in",
+        "    consultations_Table"
+      ],
+      "isDirectQuery": true,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MariaDB.Contents(\\\"4.207.168.214\\\", \\\"webdoctor\\\", null),\\n    consultations_Table = Source{[Name=\\\"consultations\\\",Kind=\\\"Table\\\"]}[Data]\\nin\\n    consultations_Table\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    },
+    {
+      "name": "services",
+      "lineageTag": "c0c7c969-2ef8-4df0-afb6-eb44805426e0",
+      "text": [
+        "let",
+        "    Source = MariaDB.Contents(\"4.207.168.214\", \"webdoctor\", null),",
+        "    services_Table = Source{[Name=\"services\",Kind=\"Table\"]}[Data]",
+        "in",
+        "    services_Table"
+      ],
+      "isDirectQuery": true,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MariaDB.Contents(\\\"4.207.168.214\\\", \\\"webdoctor\\\", null),\\n    services_Table = Source{[Name=\\\"services\\\",Kind=\\\"Table\\\"]}[Data]\\nin\\n    services_Table\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    },
+    {
+      "name": "slot_allocations_hours",
+      "lineageTag": "88b52c40-2ffa-43f7-b342-4b7a26ff6634",
+      "text": [
+        "let",
+        "    Source = MariaDB.Contents(\"4.207.168.214\", \"webdoctor\", null),",
+        "    slot_allocation_hours_Table = Source{[Name=\"slot_allocation_hours\",Kind=\"Table\"]}[Data]",
+        "in",
+        "    slot_allocation_hours_Table"
+      ],
+      "isDirectQuery": true,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MariaDB.Contents(\\\"4.207.168.214\\\", \\\"webdoctor\\\", null),\\n    slot_allocation_hours_Table = Source{[Name=\\\"slot_allocation_hours\\\",Kind=\\\"Table\\\"]}[Data]\\nin\\n    slot_allocation_hours_Table\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    },
+    {
+      "name": "slot_allocations",
+      "lineageTag": "744e3623-3887-4eb7-b10b-0093bba363b6",
+      "text": [
+        "let",
+        "    Source = MariaDB.Contents(\"4.207.168.214\", \"webdoctor\", null),",
+        "    slot_allocations_Table = Source{[Name=\"slot_allocations\",Kind=\"Table\"]}[Data]",
+        "in",
+        "    slot_allocations_Table"
+      ],
+      "isDirectQuery": true,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MariaDB.Contents(\\\"4.207.168.214\\\", \\\"webdoctor\\\", null),\\n    slot_allocations_Table = Source{[Name=\\\"slot_allocations\\\",Kind=\\\"Table\\\"]}[Data]\\nin\\n    slot_allocations_Table\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    },
+    {
+      "name": "users",
+      "lineageTag": "2f38f03c-5b4e-4189-9edc-a3fb6f483833",
+      "navigationStepName": "Navigation",
+      "text": [
+        "let",
+        "    Source = MariaDB.Contents(\"4.207.168.214\", \"webdoctor\", null),",
+        "    users_Table = Source{[Name=\"users\",Kind=\"Table\"]}[Data]",
+        "in",
+        "    users_Table"
+      ],
+      "isDirectQuery": true,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MariaDB.Contents(\\\"4.207.168.214\\\", \\\"webdoctor\\\", null),\\n    users_Table = Source{[Name=\\\"users\\\",Kind=\\\"Table\\\"]}[Data]\\nin\\n    users_Table\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    },
+    {
+      "name": "treatments",
+      "lineageTag": "d4a3ec4b-212e-47eb-bbb6-305136b6e63a",
+      "text": [
+        "let",
+        "    Source = MariaDB.Contents(\"4.207.168.214\", \"webdoctor\", null),",
+        "    treatments_Table = Source{[Name=\"treatments\",Kind=\"Table\"]}[Data]",
+        "in",
+        "    treatments_Table"
+      ],
+      "isDirectQuery": true,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n    Source = MariaDB.Contents(\\\"4.207.168.214\\\", \\\"webdoctor\\\", null),\\n    treatments_Table = Source{[Name=\\\"treatments\\\",Kind=\\\"Table\\\"]}[Data]\\nin\\n    treatments_Table\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Exception",
+      "isHidden": false
+    }
+  ],
+  "queryGroups": [],
+  "culture": "en-GB",
+  "firewallEnabled": true
+}

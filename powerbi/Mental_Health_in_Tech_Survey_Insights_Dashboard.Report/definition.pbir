@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Mental_Health_in_Tech_Survey_Insights_Dashboard.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

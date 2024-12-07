@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Mental Health in Tech - Analysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "982cbbb3-7f51-4d59-8d80-6c2778bc85c1"
+  }
+}

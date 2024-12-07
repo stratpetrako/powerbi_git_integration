@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "CRA_Resource AllocationLatest_v2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f83e48ee-9145-4d6f-be87-9d8d64ef8c97"
+  }
+}

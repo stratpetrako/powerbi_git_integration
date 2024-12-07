@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Webdoctor_analysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "28ab9dbd-ddad-4ea9-8c5c-32fa1f3c1750"
+  }
+}

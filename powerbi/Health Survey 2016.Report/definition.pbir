@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Health Survey 2016.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

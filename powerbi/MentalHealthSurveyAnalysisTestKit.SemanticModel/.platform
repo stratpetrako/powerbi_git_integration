@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "MentalHealthSurveyAnalysisTestKit"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1f9672b9-02a1-4c77-a181-3b453d0dd876"
+  }
+}
